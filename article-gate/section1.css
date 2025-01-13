@@ -1,0 +1,45 @@
+
+.top-section {
+  background-image:url('/article-gate/pictures/images (23).jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 50px;
+  text-align: center;
+  height: 400px;
+}
+
+.header-image {
+  height: 300px;
+  max-height:300px;
+  object-fit: cover; 
+  margin-bottom: 20px;
+}
+
+.top-section h1 {
+  font-size: 2em;
+  margin: 0;
+  text-shadow: 5px 5px 1px black;
+}
+
+.top-section p {
+  font-size: 1.2em;
+  margin-top: 10px;
+  text-shadow: 5px 5px 1px black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .top-section h1 {
+    font-size: 2em;
+  }
+
+  .top-section p {
+    font-size: 1em;
+  }
+
+  .top-section {
+    padding: 20px;
+  }
+}

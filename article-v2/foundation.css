@@ -1,0 +1,151 @@
+body { 
+    background-color: grey;
+}
+
+
+
+.header {
+    background-image: url('/article-v2/pictures/header-background.avif');
+    background-position: bottom;
+    padding: 10px;
+}
+
+.headercontainer {
+    display:flex;
+    justify-content: center;
+}
+  
+.leftside {
+    background-color: white;
+    float:left;
+    width: 60%;
+    margin: 10px 0px;
+    padding: 5px; 
+}
+
+.img1 {
+    background-image: url('/article-v2/pictures/img1.jpg');
+    background-size: cover;
+    padding: 10em;
+    margin: 0px 15px;
+    width: 55%;
+    background-position: 0px -150px;
+}
+
+.img2 {
+    background-image: url('/article-v2/pictures/img2.jpg');
+    background-size: cover;
+    padding: 10em;
+    margin: 0px 15px;
+    width: 55%;
+    background-position: 0px -135px;
+}
+.title{
+    margin: 0px 15px;
+    padding: 10px;
+}
+
+.text {
+    position: inherit;
+    margin: 0px 15px;
+    padding: 5px;
+}
+
+#button1 {
+    background-color: gray;
+    padding: 0.5em;
+    transform: translate(15px, -10px);
+    border-radius: 8px;
+    color: white;
+}
+
+#button2 {
+    background-color: gray;
+    padding: 0.5em;
+    transform: translate(15px, -10px);
+    border-radius: 8px;
+    color: white;
+}
+
+.rightside {
+    background-color: white;
+    width: 37%;
+    padding: 5px;
+    float: right;
+    margin: 10px 0px;
+}
+
+#welcome {
+    text-align: center;
+}
+
+.logincontainer {
+    background: transparent;
+    height: 300px;
+    border: 2px solid black;
+}
+
+.logincontainer {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px;
+    font-size: 1em;
+}
+
+input {
+    width: 90%;
+    margin: 5px;
+    font-size: 1em;
+}
+
+.submit-btn {
+    margin: 10px 0px 0px 5px;
+    padding: 8px;
+    border-radius: 5px;
+    background: gray;
+    color: white;
+    font-size: 1em;
+    width: 95%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+     
+    .img1, .img2 {
+        width: fit-content;
+        background-size: cover;
+        background-position: center;
+        
+    }
+    
+    .leftside {
+        width: 64%;
+    }
+
+    .rightside {
+        width: 30%;
+    }
+
+}
+

@@ -1,0 +1,50 @@
+.body{
+  display:flex;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.backcontainer {
+  display: center;
+  text-align: center;
+  box-shadow: 0 100px 100px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  width: 130px;
+  margin: 20px;
+  margin-left: 40px;
+  background-color: #45A049;
+}
+
+.backbutton{
+  background-color: #45A049;
+  border: none;
+}
+
+.backcontainer h1 {
+  font-size: 20px;
+}
+
+.teachercontainer {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  padding: 20px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+.teachercontainer h1 {
+  font-size: 50px;
+}
+
+.teachercontainer p {
+  font-size: 30px;
+}
+
+#teachpic {
+  width: 100%;
+  height: 800px;
+
+}

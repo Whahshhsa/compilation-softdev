@@ -1,0 +1,121 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-image: url('/article-gate/pictures/images (24).jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70% 70%;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;  /* Horizontally center the content */
+  align-items: center;      /* Vertically center the content */
+  overflow: hidden;         /* Prevent scrolling caused by the video */
+  z-index: -1;
+}
+
+/* Background Video */
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Make sure the video is behind the content */
+}
+
+#background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Make the video cover the entire screen */
+  opacity: 0.6; /* Optional: Adjust the opacity to make the video less intense */
+}
+
+/* Form Container */
+.login-container, .register-container {
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: slideUp 1s ease-out forwards;
+  z-index: 1; /* Ensure the form appears above the video */
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #4e54c8;
+  animation: fadeInText 1s ease-in-out 0.5s forwards;
+}
+
+/* Form Styling */
+.login-form, .register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1em;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.submit-btn {
+  padding: 12px;
+  background-color: #4e54c8;
+  color: #fff;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #373ab7;
+}
+
+/* Animations */
+@keyframes slideUp {
+  0% { opacity: 0; transform: translateY(-30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInText {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-container, .register-container {
+    width: 90%;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-container, .register-container {
+    width: 100%;
+    padding: 10px;
+  }
+}

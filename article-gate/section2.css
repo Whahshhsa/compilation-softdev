@@ -1,0 +1,81 @@
+/* Styles for the bottom section (articles) */
+.bottom-section {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.article-preview {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.article-preview h2 {
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.article-meta {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.article-preview p {
+  margin: 0 0 15px;
+  color: #555;
+}
+
+.article-preview .read-more {
+  padding: 10px 15px;
+  background-color: #4e54c8;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+.article-preview .read-more:hover {
+  background-color: #373ab7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .article-preview {
+    padding: 10px;
+  }
+
+  .article-preview h2 {
+    font-size: 1.5em;
+  }
+
+  .article-preview .read-more {
+    font-size: 0.8em;
+    padding: 8px 12px;
+  }
+
+  .bottom-section {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .article-preview h2 {
+    font-size: 1.2em;
+  }
+
+  .article-preview p {
+    font-size: 0.9em;
+  }
+
+  .article-meta {
+    font-size: 0.8em;
+  }
+
+  .article-preview .read-more {
+    font-size: 0.8em;
+    padding: 6px 10px;
+  }
+}

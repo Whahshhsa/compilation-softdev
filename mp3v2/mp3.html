@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='mp3.css'>
+</head>
+<body>
+    
+    <div class="clear">
+        <div class="container1">
+            <div onclick="playSong(0)" class="music">
+                <img src="/mp3v2/images/valentina.jpeg" class="prvw"></img>
+                    <div  class="details"> 
+                        <h1>Valentina</h1>
+                        <p>by Daniel Ceasar</p>
+                    </div>
+            </div>
+            <div onclick="playSong(1)" class="music2">
+                <img src="/mp3v2/images/sining.jpg" class="prvw2"></img>
+                    <div class="details2"> 
+                        <h1>Sining</h1>
+                        <p>by Dionela</p>
+                    </div>
+            </div>
+            <div onclick="playSong(2)" class="music3">
+                <img src="/mp3v2/images/connections.jpg" class="prvw3"></img>
+                    <div class="details3"> 
+                        <h1>Connections</h1>
+                        <p>by RXI feat(Yunme)</p>
+                    </div>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="music-player">
+                <div class="info">
+                  <h2 class="title" id="song-title">Song Title</h2>
+                </div>
+                <img src="/mp3v2/images/valentina.jpeg" class="image" id="song-image"></img>
+                <audio id="audio"></audio>
+                <div class="controls">
+                    <div class="progresscontainer" id="progress-container">    
+                        <input class="progressbar" type="range" id="progress-bar" value="0" max="100">
+                        <div class="remaining-time" id="remaining-time"></div>
+                    </div>
+                    <div class="time">
+                        <span id="current-time">0:00</span> / <span id="duration">0:00</span>
+                    </div>
+                        <button id="play" onclick="togglePlay()">Play</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src='mp3.js'></script>
+</body>
+</html>

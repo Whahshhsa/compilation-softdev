@@ -1,0 +1,127 @@
+body {   
+    background: white;
+
+}
+   
+
+
+
+.navbar {
+    background: #1A4862;
+    padding: 2em;
+    border-radius: 10px;
+    
+
+}
+
+.navbar a {
+    float: inline-end;
+    text-decoration: none;
+    padding: 14px 14px;
+    margin-top: -23px;
+    transition: transform 0.5s ease, background-color 0.55s ease;
+    color: white;
+    border-radius: 10px;
+}
+
+.navbar a:hover {
+    transform: translateY(-5px);
+    background: white;
+    border-radius: 10px;
+    color: black;
+}
+
+.container1 {
+    float: left;
+    margin-top: 150px;
+    height: auto;
+    width: 50%;
+    
+}
+
+.name {
+    margin: 0px 50px;
+    animation: slideIn 1s ease forwards;
+    opacity: 0;
+    transform: translateX(-50px);   
+}
+
+.details {
+    animation: slideIn 1s ease forwards;
+    opacity: 0;
+    transform: translateX(-50px); 
+
+}
+
+#sub {
+    position: absolute;
+    margin: -10px 50px;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 5px;
+    text-decoration-color: #1A4862;
+   
+}
+
+#sub1 {
+    position: absolute;
+    margin: 30px 50px;
+}
+
+
+
+.container2 {
+    float: right;
+    background: linear-gradient(180deg, #2c3e50, #4c6a92);
+    width: 30%;
+    height: auto;
+    margin-top: 100px;
+    margin-right: 200px;
+    border-radius: 10px;
+}
+
+.image {
+    background: url(/merge_articles/picture/1736003441156.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px;
+    margin: -100px 70px;
+    padding: 5em;;
+
+    
+}
+@keyframes slideIn {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .name, .details {
+        font-size: 10px;
+    }
+        
+    .image {
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 300px;
+        margin: -30px 50px;
+        padding: 5em;;
+    
+    }
+
+    .container2 {
+        float: right;
+        width: 50%;
+        height:300px;
+        margin-top: 100px;
+        border-radius: 10px;
+        margin-right: 0px;
+    }
+    
+}

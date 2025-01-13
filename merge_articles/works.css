@@ -1,0 +1,106 @@
+body{
+    background: white;
+}
+
+.navbar {
+    background: #1A4862;
+    padding: 2em;
+    border-radius: 10px;
+        
+}
+
+.navbar a {
+    float: inline-end;
+    text-decoration: none;
+    padding: 14px 14px;
+    margin-top: -23px;
+    transition: transform 0.5s ease, background-color 0.55s ease;
+    color: white;
+    border-radius: 10px;
+}
+
+.navbar a:hover {
+    transform: translateY(-5px);
+    background: white;
+    border-radius: 10px;
+    color: black;
+}
+
+.article1, .article2, .article3, .article4 {
+    background: #1A4862;
+    width: 50%;
+    border-radius: 10px;
+    color: white;
+    height: 160px;
+    animation: slideIn1 0.5s ease forwards;
+    opacity: 0;
+    transform: translateX(-50px);
+}
+
+h1 {
+    padding: 10px;
+}
+
+p {
+    margin: 10px 10px;
+}
+
+button {
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    width: 60px;
+    margin: 1px 10px;
+    background: transparent;
+    transition: transform 0.5s ease;
+    border: solid white;
+    color: white;
+}
+
+button:hover {
+    transform: translateY(-5px);
+    background: white;
+    color: black;
+}
+
+.container1 {
+    float: left;
+    width: 60%;
+}
+
+.container2 {
+    float: right;
+    width: 40%;
+    height: auto; 
+    margin: -703px 100px;  
+    position: sticky;
+}
+
+iframe {
+    
+    height: 690px;
+    width: 600px;
+}
+@keyframes slideIn1 {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .article1, .article2, .article3 {
+        background: #1A4862;
+        width: 70%;
+        border-radius: 10px;
+        color: white;
+        height: 150px;
+        animation: slideIn1 0.5s ease forwards;
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+}

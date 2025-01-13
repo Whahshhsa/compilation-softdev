@@ -1,0 +1,44 @@
+
+.top-section {
+  background-image:url('/article w design/pictures/images .jpeg');
+  background-size: cover;
+  background-position: 0 80%;
+  background-repeat: no-repeat;
+  padding: 50px;
+  text-align: center;
+  height: 300px;
+}
+
+.header-image {
+  height: 500px; /* Maintain aspect ratio */
+  max-height:200px; /* Limit the height to prevent distortion */
+  object-fit: cover; /* Ensure the image covers the space without stretching */
+  margin-bottom: 20px; /* Space between the image and text */
+}
+
+.top-section h1 {
+  font-size: 3em;
+  margin: 0;
+  color: white;
+}
+
+.top-section p {
+  font-size: 1.2em;
+  margin-top: 10px;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .top-section h1 {
+    font-size: 2em;
+  }
+
+  .top-section p {
+    font-size: 1em;
+  }
+
+  .top-section {
+    padding: 20px;
+  }
+}
